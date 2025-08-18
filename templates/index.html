@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block content %}
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+  <form
+    action=""
+    method="post"
+    class="bg-white p-8 rounded-lg shadow-md flex flex-col gap-4 w-full max-w-sm"
+  >
+    <input
+      type="file"
+      name="file"
+      class="block w-full text-sm text-gray-700 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    <button
+      type="submit"
+      class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+    >
+      Scan
+    </button>
+  </form>
+</div>
+{% endblock %}
